@@ -107,7 +107,7 @@ node_templates:
           create:
             inputs:
               deployment_inputs:
-                network1: { get_property: [ application_network, resource_id ] }
+                network1: { get_property: [ lb_network, resource_id ] }
                 vm_list: { get_attribute: [ appl_vm1, ip ] }
       relationships:
         - target: appl_vm1
